@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+        .container{
+           height: 775px;
+           width: 100%;
+           border: 2px solid black;
+           background-image: url("../Kerfin7_NEA_2341.jpg");
+           background-size: cover;
+           background-repeat: no-repeat;
+           
+
+        }
+        .box{
+            height: 300px;
+            width: 500px;
+            /* border: 2px solid red; */
+            border-radius: 9px;
+            text-align: center;
+            margin-top: 100px;
+            /* margin-left: 100px; */
+            /* background-color: rgb(236, 10, 157);  */
+            
+        }
+        .abc{
+            
+            height: 108px;
+            width: 721px;
+            margin-top: 40px;
+            margin-left: -106px;
+            margin-bottom: 50px;
+            border-radius: 9px;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.9;
+        }
+        img{
+            margin-top: 35px;
+        }
+        /* .techkriti{
+            height:
+        } */
+        .search{
+            height: 44px;
+            width: 327px;
+            font-size: 30px;
+            font-family:'Courier New', Courier, monospace;
+            font-weight:bolder;
+            text-transform:uppercase;
+            background-color: black;
+            color: yellow;
+            caret-color:red;
+            text-align: center;
+            border: none;
+            outline: none;
+        }
+      
+
+        .yash{
+            font-size: 30px;
+            color: rgb(68, 255, 0);
+            font-size: 40px;
+            font-weight: bolder;
+         
+            font-weight: bolder;
+            
+            
+        }
+        
+        .btn{
+            height: 48px;
+            width: 126px;
+            font-size: 15px;
+            border-radius: 35px;
+            background-color: aqua;
+            border: none;
+            color: darkgreen;
+            transition: font-size 2s;
+            transition: width 2s;
+        }
+        .btn:hover{
+            height: 48px;
+            width: 100px;
+            font-size: 20px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        .hint {
+        text-align: center;
+        width: 985px;
+        margin-left: -225px;
+        background-color: skyblue;
+        border-radius: 5px;
+        height: 86px;
+        padding-top: 14px;
+        text-shadow: 0px 3px 5px rgb(255, 0, 0);
+        opacity: 0.8;
+        }
+    
+     
+#techimg {
+    height: 117px;
+    margin-top: -61px;
+    margin-left: 538px;
+    width: 352px;
+    border-radius: 70px 0px 70px 0px;
+    background-color: black;
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <center>
+          <div class="box">
+            <img src="../iskralogo.png" alt="" id="techimg">
+        <h1 class="hint">I come in square package , but i am round. I contain lots of information for your computer . handle me carefully. What am i ?</h1>
+    <div class="abc">
+        <img src="../d.png" alt="" height="60px" width="60px">
+        <img src="../c.png" alt="" height="60px" width="60px">
+        <img src="../c.png" alt="" height="60px" width="60px">
+        <img src="../p.png" alt="" height="60px" width="60px">
+        <img src="../a.png" alt="" height="60px" width="60px">
+        <img src="../m.png" alt="" height="60px" width="60px">
+        <img src="../i.png" alt="" height="60px" width="60px">
+        <img src="../s.png" alt="" height="60px" width="60px">
+        <img src="../o.png" alt="" height="60px" width="60px">
+        <img src="../c.png" alt="" height="60px" width="60px">
+        <img src="../t.png" alt="" height="60px" width="60px">
+
+
+
+    </div>
+    
+    <input id="text_a" type="text" class="search">
+<p id="answer" class="yash"></p> 
+
+<button onclick="myFunction()" class="btn">Check</button>
+
+</div>
+</center>
+</div>
+</body>
+<script>
+function myFunction()
+{
+    var a=document.getElementById("text_a");
+
+if (a.value.toUpperCase() === "COMPACT DISC")
+  {
+      // document.getElementById("img1").style.display="block".display="flex";
+      document.getElementById("answer").innerHTML="Correct!";
+      a.style.outline="2px solid green";
+      a.style.color="green";
+      
+  }
+//   if(a.value === ""){
+//     document.getElementById("user").style.border="2px solid red"
+//   }
+else
+  {
+      // document.getElementById("img2").style.display="block".display="flex";
+      document.getElementById("answer").innerHTML="You are Wrong!";
+      a.style.outline="2px solid red";
+      a.style.color="red";
+  }
+
+  }
+
+</script>
+</html>
